@@ -1,0 +1,11 @@
+- pipeline: fpypinupsa
+  events:
+  - type: PUSH
+    refs:
+    - refs/pull/1
+  fail_on_prepare_env_warning: true
+  resources: SMALL
+  actions:
+  - action: Sleep 1 seconds
+    type: SLEEP
+    sleep_in_sec: 1
